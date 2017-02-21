@@ -1,0 +1,54 @@
+{
+  "name": "tsjest",
+  "version": "1.0.0",
+  "description": "testing jest webpack and tslint",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "start": "node ./dist/server.js",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbudm/tslint-jest-webpack.git"
+  },
+  "keywords": [
+    "tslint",
+    "webpack",
+    "jest"
+  ],
+  "author": "Steve Roberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbudm/tslint-jest-webpack/issues"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "((__test__))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "homepage": "https://github.com/mbudm/tslint-jest-webpack#readme",
+  "devDependencies": {
+    "@types/es6-promise": "0.0.32",
+    "@types/hapi": "^16.0.0",
+    "@types/jest": "^18.1.1",
+    "@types/node": "^7.0.5",
+    "awesome-typescript-loader": "^3.0.4",
+    "jest": "^18.1.0",
+    "ts-jest": "^18.0.3",
+    "tslint": "^4.4.2",
+    "tslint-loader": "^3.4.2",
+    "typescript": "^2.1.6",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "hapi": "^16.1.0"
+  }
+}

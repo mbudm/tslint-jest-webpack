@@ -1,0 +1,24 @@
+{
+	"extends": "tslint:latest",
+	"rules": {
+		"whitespace": [
+			false
+		],
+		"align": [true, "statements"],
+		"indent": [true, "spaces"],
+		"no-string-literal": false,
+		"no-var-requires": false,
+		"object-literal-shorthand": false,
+		"object-literal-sort-keys": false,
+		"one-line": [false],
+		"only-arrow-functions": [false],
+		"ordered-imports": [false],
+		"quotemark": [true, "single", "jsx-double"],
+		"trailing-comma": [true, {"multiline": "never", "singleline": "never"}],
+		"triple-equals": false,
+		"forin": false
+	},
+	"env": {
+	  "jest": true
+	}
+}
